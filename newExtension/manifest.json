@@ -6,13 +6,19 @@
     "action" : {
         "default_popup" : "startup_menu.html"
     },
+<<<<<<< HEAD
     "permissions" : [
         "notifications"
     ],
+=======
+    "permissions": [
+        "activeTab"
+      ],
+>>>>>>> 10d829bfacc7d93d82a42f3db9f6deb12c4ef8b9
     "content_scripts": [
         {
           "matches": [
-            "<all_urls>"
+            "*://*/*"
           ],
           "js": [
             "textScript.js"
