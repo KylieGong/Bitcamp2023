@@ -6,6 +6,9 @@
     "action" : {
         "default_popup" : "startup_menu.html"
     },
+    "permissions": [
+        "activeTab"
+      ],
     "content_scripts": [
         {
           "matches": [
