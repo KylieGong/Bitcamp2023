@@ -25,7 +25,7 @@
 // }
 
 //change the document background color, parameter in string form
-function changeBgColor() {
+function changeBgColor(bgColor) {
     document.body.style.backgroundColor = bgColor; //can be "blue" or "#FFFFFF"
     alert('PLEASE WORKKKK');
 }
