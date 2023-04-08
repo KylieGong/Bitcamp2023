@@ -23,7 +23,6 @@ function changeText(fontFamily, fontSize, fontColor) {
         el.style.fontSize = (1.5*fontSize).toString(); // Change the font size
         el.style.color = fontColor; // Change the text color
         console.log("changeText");
-        print("blah");
     });
 }
 
