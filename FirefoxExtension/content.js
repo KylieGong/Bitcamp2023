@@ -21,21 +21,8 @@ function increaseHeaderFontSize() {
       }
     });
 }
-function increaseHeaderFontSize() {
-    const headerTags = ["h1", "h2", "h3", "h4", "h5", "h6"];
-    const headerSizeMultiplier = 1.2; // Change this to adjust the header size
-    
-    headerTags.forEach(tag => {
-    const elements = document.getElementsByTagName(tag);
-    for (let i = 0; i < elements.length; i++) {
-        const currentSize = parseInt(window.getComputedStyle(elements[i]).getPropertyValue("font-size"));
-        const newSize = currentSize * headerSizeMultiplier;
-        elements[i].style.fontSize = newSize + "px";
-    }
-    });
-}
 
-  function increaseBodyFontSize() {
+function increaseBodyFontSize() {
     const headerTags = ["h1", "h2", "h3", "h4", "h5", "h6"];
     const bodyTags = ["p", "span", "a", "li", "ul", "ol", "div", "section", "article"];
     const bodySizeMultiplier = 1.2; // Change this to adjust the body text size
