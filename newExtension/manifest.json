@@ -3,7 +3,7 @@
     "name": "Font Changer",
     "version": "1.0",
     "description": "Change the font style and size of any website.",
-    "permissions": ["activeTab"],
+    "permissions": ["activeTab", "scripting"],
     "action": {
       "default_popup": "popup.html"
     },
