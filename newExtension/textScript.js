@@ -14,7 +14,6 @@ function changeText(fontFamily, fontSize, fontColor) {
         el.style.fontFamily = fontFamily; // Change the font family
         el.style.fontSize = fontSize.toString(); // Change the font size
         el.style.color = fontColor; // Change the text color
-        console.log("changeText");
     });
 
     //change headings
@@ -22,7 +21,6 @@ function changeText(fontFamily, fontSize, fontColor) {
         el.style.fontFamily = fontFamily; // Change the font family
         el.style.fontSize = (1.5*fontSize).toString(); // Change the font size
         el.style.color = fontColor; // Change the text color
-        console.log("changeText");
     });
 }
 
