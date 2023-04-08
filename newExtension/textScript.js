@@ -25,7 +25,7 @@
 // }
 
 //change the document background color, parameter in string form
-document.getElementById("myButton").addEventListener("click", changeBgColor());
+//document.getElementById("myButton").addEventListener("click", changeBgColor());
 
 function changeBgColor() {
     //document.body.style.backgroundColor = bgColor; //can be "blue" or "#FFFFFF"
