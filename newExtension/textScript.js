@@ -40,5 +40,14 @@ function changeBgColor() {
     alert('PLEASE WORKKKK');
 }
 
+function changeFontStyleAndSize() {
+    // Change the font style and size here
+    document.body.style.fontFamily = "Arial";
+    document.body.style.fontSize = "24px";
+  }
+  
+  // Listen for clicks on the browser action button
+  chrome.browserAction.onClicked.addListener(changeFontStyleAndSize);
+
 document.body.style.backgroundColor = "blue"; //can be "blue" or "#FFFFFF"
 alert('PLEASE WORKKKK');
