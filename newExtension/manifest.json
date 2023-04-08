@@ -3,7 +3,14 @@
     "name": "Font Changer",
     "version": "1.0",
     "description": "Change the font style and size of any website.",
-    "permissions": ["activeTab", "scripting"],
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "storage",
+        "declarativeContent",
+        "tabs",
+        "action"
+    ],
     "action": {
       "default_popup": "popup.html"
     },
@@ -12,5 +19,8 @@
         "matches": ["http://*/*", "https://*/*"],
         "js": ["script.js"]
       }
-    ]
+    ],
+    "background": {
+        "service_worker": "background.js"
+      }
   }
