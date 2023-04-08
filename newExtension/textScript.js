@@ -39,3 +39,6 @@ function changeBgColor() {
     document.body.style.backgroundColor = "blue"; //can be "blue" or "#FFFFFF"
     alert('PLEASE WORKKKK');
 }
+
+document.body.style.backgroundColor = "blue"; //can be "blue" or "#FFFFFF"
+alert('PLEASE WORKKKK');
