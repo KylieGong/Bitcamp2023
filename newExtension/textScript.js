@@ -28,6 +28,6 @@
 document.getElementById("myButton").addEventListener("click", changeBgColor);
 
 function changeBgColor() {
-    document.body.style.backgroundColor = bgColor; //can be "blue" or "#FFFFFF"
+    document.body.style.backgroundColor = "blue"; //can be "blue" or "#FFFFFF"
     alert('PLEASE WORKKKK');
 }
