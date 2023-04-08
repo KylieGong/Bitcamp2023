@@ -5,7 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="styleseet" href="./startup_menu.css" />
-        <script type = "text/javascript" src="textScript.js"></script>
+        <script src="textScript.js"></script>
+ 
     </head>
     <body>
         
@@ -13,8 +14,14 @@
             <input type = "range" min = "1" max = "100" value = "50" class = "slider">  
         </div>
 
-        <button onclick="changeBgColor('blue')">click me</button>
-       
+
+        <button onclick="changeBgColor()">Hello</button>
+
+        <script>
+          function hello() {
+            alert('Hello');
+          }
+        </script>
 
     </body>
 </html>
