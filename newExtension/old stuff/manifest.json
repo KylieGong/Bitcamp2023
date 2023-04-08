@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "Focus Mode",
+    "description": "Enable focus mode on Chrome's official Extensions and Chrome Web Store documentation.",
+    "version": "1.0",
+    "action" : {
+        "default_title": "Change Font Style and Size",
+        "default_popup" : "startup_menu.html"
+    },
+    "permissions" : [
+        "notifications",
+        "activeTab",
+        "tabs"
+    ],
+    "content_scripts": [
+        {
+          "matches": ["<all_urls>"],
+          "js":["textScript.js"],
+          "allFrames": true,
+          "run_at": "document_end"
+
+        }
+      ]
+}
