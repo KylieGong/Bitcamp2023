@@ -29,7 +29,3 @@ function changeBgColor() {
     //document.body.style.backgroundColor = bgColor; //can be "blue" or "#FFFFFF"
     alert('PLEASE WORKKKK');
 }
-
-document.getElementById("I die").addEventListener("click", function() {
-    changeBgColor();
-});
