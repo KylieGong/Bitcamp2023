@@ -30,6 +30,6 @@ function changeBgColor() {
     alert('PLEASE WORKKKK');
 }
 
-startup_menu.getElementById("I die").addEventListener("click", function() {
+document.getElementById("I die").addEventListener("click", function() {
     changeBgColor();
 });
