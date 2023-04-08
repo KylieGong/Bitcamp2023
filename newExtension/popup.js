@@ -8,8 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
           func: function() {
             document.body.style.fontFamily = fontStyle;
             document.body.style.fontSize = fontSize + 'px';
-            window.alert(fontStyle)
-            window.alert(fontSize)
+            console.log("honest want to die");
           }
         });
       });
