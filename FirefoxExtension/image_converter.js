@@ -1,8 +1,12 @@
 // script to steal the original picture and make it our own.
 
+function changeURL(imageSrc) {
+    document.getElementById("img").src=imageSrc; // set the current source to the new image
+}
+
 async function changeImage (imageSrc){
     const ctx = canvas.getContext('2d');
-    const canvas = document.getElementById('imageSrc');
+    const canvas = document.getElementById('canvas');
 
     // set the canvas size to the image size
     canvas.width = imageSrc.width;
@@ -37,5 +41,5 @@ async function changeImage (imageSrc){
 
     // put the modified pixel data back on the canvas
     ctx.putImageData(imageData, 0, 0);
-    return ctx
+    
 }

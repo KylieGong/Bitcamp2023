@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <header>Changing Contrast Mode</header>
+    </head>
+    <canvas id="canvas"></canvas>
+    <script type = "text/javascript">
+
+        var currentLocation = window.location
+        var imageArray = [] //to make an empty array
+
+        currentLocation.forEach(element => {
+            curURL = changeImage(element) // creates a new url for the altered element
+            changeURL(curURL) // gives the file the new url for element
+        });
+        
+    </script>
+    <body>
+        <h1>Turn on high contrast mode?</h1>
+        <button onclick>Yes</button>
+        <button onclick>No</button>
+    </body>
+</html>
