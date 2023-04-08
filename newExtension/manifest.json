@@ -3,9 +3,6 @@
     "name": "Focus Mode",
     "description": "Enable focus mode on Chrome's official Extensions and Chrome Web Store documentation.",
     "version": "1.0",
-    "action" : {
-        "default_popup" : "startup_menu.html"
-    },
     "permissions" : [
         "notifications",
         "activeTab",
