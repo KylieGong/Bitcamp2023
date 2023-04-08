@@ -14,7 +14,7 @@
         {
           "matches": [
             "*://*/*"
-          ]
+          ],
           "js": [
             "textScript.js"
           ]
