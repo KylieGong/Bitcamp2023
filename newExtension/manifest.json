@@ -1,22 +1,15 @@
 {
-    "manifest_version": 3,
-    "name": "Font Changer",
+    "name": "Change Font Extension",
     "version": "1.0",
-    "description": "Change the font style and size of any website.",
-    "permissions": [
-        "activeTab",
-        "scripting",
-        "storage",
-        "declarativeContent",
-        "tabs"
-    ],
-    "action": {
-      "default_popup": "popup.html"
-    },
+    "manifest_version": 3,
     "content_scripts": [
       {
-        "matches": ["http://*/*", "https://*/*"],
-        "js": ["background.js"]
+        "matches": ["<all_urls>"],
+        "js": ["contentScript.js"]
       }
-    ]
+    ],
+    "options_ui": {
+      "page": "options.html",
+      "open_in_tab": true
+    }
   }
