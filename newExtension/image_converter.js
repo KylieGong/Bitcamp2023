@@ -1,4 +1,7 @@
 // script to steal the original picture and make it our own.
+function copyImage(){
+    
+}
 
 async function changeImage (imageSrc){
     image = await fetch(imageSrc) //grabs the image
