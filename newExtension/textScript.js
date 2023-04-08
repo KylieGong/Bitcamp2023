@@ -33,7 +33,7 @@ function changeText(fontFamily, fontSize, fontColor) {
 }
 
 //change the document background color, parameter in string form
-document.getElementById("myButton").addEventListener("click", changeBgColor);
+document.getElementById("myButton").addEventListener("click", changeText);
 
 function changeBgColor() {
     document.body.style.backgroundColor = "blue"; //can be "blue" or "#FFFFFF"
