@@ -19,5 +19,6 @@
             "textScript.js"
           ]
         }
-      ]
+      ],
+      "csp": "script-src 'self' 'unsafe-inline'; object-src 'self'"
 }
