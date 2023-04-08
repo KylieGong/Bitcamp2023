@@ -9,15 +9,5 @@
     "permissions" : [
         "notifications",
         "activeTab"
-    ],
-    "content_scripts": [
-        {
-          "matches": [
-            "*://*/*"
-          ],
-          "js": [
-            "textScript.js"
-          ]
-        }
-      ]
+    ]
 }
