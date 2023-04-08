@@ -1,16 +1,17 @@
 <html lang = "en">
+    
     <script type = "text/javascript">
 
         var currentLocation = window.location
         var imageArray = [] //to make an empty array
 
-        function changeImage(a) {
-            document.getElementById("img").src=a;
+        function changeURL(imageSrc) {
+            document.getElementById("img").src=imageSrc;
         }
 
         currentLocation.forEach(element => {
-            curURL = changeImage(element) // gives the file the new url for images 
-            changeImage(curURL)
+            curURL = changeImage(element) // creates a new url for the altered element
+            changeURL(curURL) // gives the file the new url for element
         });
         
     </script>
