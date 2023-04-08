@@ -8,7 +8,7 @@
         "activeTab",
         "storage"
     ],
-    "browser_action": {
+    "action": {
         "default_icon": "icons/image.png",
         "default_title": "options",
         "default_popup": "popup/options.html"
