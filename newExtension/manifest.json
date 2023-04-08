@@ -15,7 +15,7 @@
         {
           "matches": ["<all_urls>"],
           "js":["textScript.js"],
-          "all-frames": true,
+          "allFrames": true,
           "run_at": "document_end"
 
         }
