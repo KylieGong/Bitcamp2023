@@ -1,13 +1,13 @@
 <html lang = "en">
     <script>
+
         var currentLocation = window.location
-        var images = idkMan //idk
+        var imageArray = [] //to make an empty array
+
         currentLocation.forEach(element => {
-            changeImage(element)
-            
+            curURL = changeImage(element) // gives the file the new url for images 
+            imageArray.push(curURL); // add elements into the array
         });
     </script>
-
-    <img src = "updated_image.png" alt = "help" width =  >
 
 </html>
