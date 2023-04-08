@@ -27,4 +27,8 @@ chrome.runtime.onInstalled.addListener(function() {
       contexts: ['page', 'selection', 'frame'],
     });
   });
-  
+
+  browser.tabs
+  .executeScript({ file: "/content.js" })
+  .then(listenForClicks)
+  .catch(reportExecuteScriptError);
