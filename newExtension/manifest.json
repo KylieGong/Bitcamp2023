@@ -3,7 +3,7 @@
     "name": "Custom Font",
     "version": "1.0",
     "description": "Allows the user to change the font style and size of a website.",
-    "permissions": ["activeTab"],
+    "permissions": ["activeTab", "scripting"],
     "background": {
       "service_worker": "script.js"
     },

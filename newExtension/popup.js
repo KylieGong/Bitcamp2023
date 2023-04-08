@@ -3,12 +3,13 @@ document.addEventListener('DOMContentLoaded', function() {
       let fontStyle = document.getElementById('font-style').value;
       let fontSize = document.getElementById('font-size').value;
       chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
-        chrome.tabs.executeScript(
-          tabs[0].id,
-          {code: `
-            document.body.style.fontFamily = '${fontStyle}';
-            document.body.style.fontSize = '${fontSize}px';
-          `});
+        chrome.scripting.executeScript({
+          target: {tabId: tabs[0].id},
+          func: function() {
+            document.body.style.fontFamily = fontStyle;
+            document.body.style.fontSize = fontSize + 'px';
+          }
+        });
       });
     }
   
