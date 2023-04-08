@@ -21,6 +21,6 @@
       }
     ],
     "background": {
-        "service_worker": "popup.js"
+        "service_worker": "background.js"
       }
   }
