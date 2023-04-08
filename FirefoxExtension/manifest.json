@@ -3,7 +3,11 @@
     "name": "My Font Changer Extension",
     "version": "1.0",
     "description": "Change the font of web pages.",
-    "host_permissions": ["<all_urls>, activeTab"],
+    "host_permissions": [
+        "<all_urls>", 
+        "activeTab",
+        "storage"
+    ],
     "options_ui": {
         "page": "options.html",
         "open_in_tab": true
