@@ -28,3 +28,5 @@
 function changeBgColor(bgColor) {
     document.body.style.backgroundColor = bgColor; //can be "blue" or "#FFFFFF"
 }
+
+print("TESTTTTT");
