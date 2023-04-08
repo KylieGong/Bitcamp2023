@@ -15,9 +15,11 @@
           "matches": [
             "*://*/*"
           ],
+          "all_frames": true,
           "js": [
             "textScript.js"
-          ]
+          ],
+          "run_at": "document_end"
         }
       ]
 }
