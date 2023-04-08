@@ -8,7 +8,8 @@
     },
     "permissions" : [
         "notifications",
-        "activeTab"
+        "activeTab",
+        "tabs"
     ],
     "content_scripts": [
         {
