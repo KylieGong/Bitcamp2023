@@ -18,8 +18,5 @@
         "matches": ["http://*/*", "https://*/*"],
         "js": ["background.js"]
       }
-    ],
-    "background": {
-        "service_worker": "background.js"
-      }
+    ]
   }
