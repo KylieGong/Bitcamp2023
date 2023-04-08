@@ -8,9 +8,10 @@
         "activeTab",
         "storage"
     ],
-    "options_ui": {
-        "page": "options.html",
-        "open_in_tab": true
+    "browser_action": {
+        "default_icon": "icons/image.png",
+        "default_title": "options",
+        "default_popup": "popup/options.html"
     },
     "content_scripts": [
       {
