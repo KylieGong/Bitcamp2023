@@ -21,6 +21,7 @@
         }
       ],
       "browser_action": {
-        "default_title": "Change Font Style and Size"
+        "default_title": "Change Font Style and Size",
+        "default_popup" : "startup_menu.html"
       }
 }
