@@ -6,11 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="styleseet" href="./startup_menu.css" />
         <script src="textScript.js"></script>
-        <script type = "text/javascript">  
-            function myfunction() {   
-            alert("how are you");  
-                     }  
-        </script>  
+ 
     </head>
     <body>
         
@@ -18,7 +14,14 @@
             <input type = "range" min = "1" max = "100" value = "50" class = "slider">  
         </div>
 
-        <button onmousedown="myfunction()">wahhhh</button>
+
+        <button onclick="hello()">Hello</button>
+
+        <script>
+          function hello() {
+            alert('Hello');
+          }
+        </script>
 
     </body>
 </html>
