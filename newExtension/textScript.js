@@ -7,7 +7,6 @@ async function getCurrentTab() {
     return tab;
   }
 
-tab = getCurrentTab()
 
 //change the font elements in the website
 //fontFamily should be entered as a string
@@ -15,8 +14,8 @@ tab = getCurrentTab()
 //fontColor should be entered as a string
 function changeText(fontFamily, fontSize, fontColor) {
     // Select all paragraph and heading elements
-    const paragraphs = tab.querySelectorAll('p');
-    const headings = tab.querySelectorAll('h1, h2, h3, h4, h5, h6');
+    const paragraphs = document.querySelectorAll('p');
+    const headings = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
 
     //change paragraphs
     paragraphs.forEach(el => {
@@ -37,6 +36,6 @@ function changeText(fontFamily, fontSize, fontColor) {
 document.getElementById("myButton").addEventListener("click", changeBgColor);
 
 function changeBgColor() {
-    tab.body.style.backgroundColor = "blue"; //can be "blue" or "#FFFFFF"
+    document.body.style.backgroundColor = "blue"; //can be "blue" or "#FFFFFF"
     alert('PLEASE WORKKKK');
 }
