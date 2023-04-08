@@ -8,6 +8,10 @@ chrome.action.onClicked.addListener((tab) => {
 function setFontStyleAndSize() {
     const font = prompt("Enter a font style (e.g. Arial, Times New Roman)");
     const size = prompt("Enter a font size (e.g. 12px, 16pt)");
+    if(size <= 0){
+        prompt("Size cannot go below 0.")
+        size = 1
+    }
 
     if (font && size) {
         document.body.style.fontFamily = font;
