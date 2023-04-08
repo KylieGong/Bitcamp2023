@@ -3,7 +3,7 @@
 <head>
   <title>Font Options</title>
 </head>
-<body>
+<body id ="one">
   <form>
     <label for="font">Choose a font:</label>
     <select id="font" name="font">
@@ -11,6 +11,9 @@
       <option value="Times New Roman, serif">Times New Roman</option>
       <option value="Verdana, sans-serif">Verdana</option>
     </select>
+    <div class="slidercontainer">
+      <input type = "range" min = "1", max = "200", class = "slider" id="sizeslider">
+    </div>
     <button type="submit">Save</button>
   </form>
 

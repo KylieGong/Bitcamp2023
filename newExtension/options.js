@@ -28,6 +28,14 @@ chrome.runtime.onInstalled.addListener(function() {
     });
   });
 
+  var slider = options.getElementById("sizeslider");
+  var output = document.getElementById("demo");
+
+  slider.oninput = function(){
+    websitetext = getElementById("one");
+    websitetext.style.fontSize = slider%
+  }
+
   browser.tabs
   .executeScript({ file: "/content.js" })
   .then(listenForClicks)
