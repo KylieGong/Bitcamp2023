@@ -1,4 +1,4 @@
-//script to alter website code
+//script to alter website text
 
 //change the font elements in the website, all parameters are strings
 function changeText(fontFamily, fontSize, fontColor) {
@@ -9,10 +9,12 @@ function changeText(fontFamily, fontSize, fontColor) {
         el.style.fontFamily = fontFamily; // Change the font family
         el.style.fontSize = fontSize; // Change the font size
         el.style.color = fontColor; // Change the text color
+        console.log("changeText");
     });
 }
 
 //change the document background color, parameter in string form
 function changeBgColor(bgColor) {
     document.body.style.backgroundColor = bgColor; //can be "blue" or "#FFFFFF"
+    console.log("changeBgColor");
 }
