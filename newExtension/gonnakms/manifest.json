@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Font Changer",
+    "version": "1.0",
+    "description": "Change the font style and size of any website.",
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "storage",
+        "declarativeContent",
+        "tabs"
+    ],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["http://*/*", "https://*/*"],
+        "js": ["background.js"]
+      }
+    ]
+  }
