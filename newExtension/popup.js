@@ -8,6 +8,8 @@ document.addEventListener('DOMContentLoaded', function() {
           func: function() {
             document.body.style.fontFamily = fontStyle;
             document.body.style.fontSize = fontSize + 'px';
+            console.log(fontStyle)
+            console.log(fontSize)
           }
         });
       });
