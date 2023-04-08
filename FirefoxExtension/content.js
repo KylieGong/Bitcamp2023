@@ -1,5 +1,10 @@
 // Get the current font family of the page
 var currentFont = document.body.style.fontFamily;
 
-// Change the font family of the page to a new font
-document.body.style.fontFamily = "Times New Roman, sans-serif";
+// Load the saved font preference, if any, when the content script is loaded
+browser.storage.sync.get('font').then(function(result) {
+    var selectedFont = result.font;
+    if (selectedFont) {
+      document.body.style.fontFamily = selectedFont;
+    }
+  });
