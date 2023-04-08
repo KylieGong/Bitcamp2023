@@ -1,13 +1,16 @@
 {
     "manifest_version": 3,
-    "name": "Custom Font",
+    "name": "Font Changer",
     "version": "1.0",
-    "description": "Allows the user to change the font style and size of a website.",
-    "permissions": ["activeTab", "scripting"],
-    "background": {
-      "service_worker": "script.js"
-    },
+    "description": "Change the font style and size of any website.",
+    "permissions": ["activeTab"],
     "action": {
-      "default_title": "Custom Font"
-    }
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["http://*/*", "https://*/*"],
+        "js": ["content.js"]
+      }
+    ]
   }
